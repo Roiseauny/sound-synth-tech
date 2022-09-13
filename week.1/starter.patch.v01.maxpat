@@ -115,7 +115,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 102.0, 445.0, 310.0, 20.0 ],
-					"presentation_linecount" : 5,
 					"text" : "<f> floating point (default precision of 6 decimal places)"
 				}
 
@@ -255,7 +254,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 84.0, 321.0, 170.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1, 2, 3, 4, 6, 7, 89, 10000, 20K"
 				}
 
@@ -268,7 +266,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 84.0, 284.0, 163.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1 2 3 4 6 7 89 10000 20K"
 				}
 
@@ -292,7 +289,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 57.0, 246.0, 98.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "\"I'm a message!\""
 				}
 
@@ -394,7 +390,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, 134.0, 52.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "<math>"
 				}
 
