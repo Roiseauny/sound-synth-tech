@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 197.333339214324951, 492.000014662742615, 150.0, 20.0 ],
+					"text" : "raw input feed)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -76,37 +87,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "preset",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 913.0, 652.0, 100.0, 40.0 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 4, "obj-21", "crosspatch", "mark", 7, "obj-21", "crosspatch", "list", 1, 0, 1.0, 7, "obj-21", "crosspatch", "list", 1, 1, 1.0, 4, "obj-21", "crosspatch", "clearmarked", 5, "<invalid>", "flonum", "float", 500.0, 5, "obj-28", "flonum", "float", 475.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-50", "flonum", "float", 475.0, 5, "obj-52", "flonum", "float", 85.900001525878906, 5, "<invalid>", "flonum", "float", 500.0, 5, "obj-60", "flonum", "float", 475.0, 5, "obj-59", "flonum", "float", 15.0, 5, "obj-75", "flonum", "float", -14.0, 5, "<invalid>", "flonum", "float", 500.0, 5, "<invalid>", "flonum", "float", 475.0, 5, "<invalid>", "flonum", "float", 15.0 ]
-						}
-, 						{
-							"number" : 2,
-							"data" : [ 4, "obj-21", "crosspatch", "mark", 7, "obj-21", "crosspatch", "list", 3, 0, 1.0, 7, "obj-21", "crosspatch", "list", 3, 1, 1.0, 4, "obj-21", "crosspatch", "clearmarked", 5, "<invalid>", "flonum", "float", 500.0, 5, "obj-28", "flonum", "float", 475.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-50", "flonum", "float", 475.0, 5, "obj-52", "flonum", "float", 85.900001525878906, 5, "<invalid>", "flonum", "float", 500.0, 5, "obj-60", "flonum", "float", 475.0, 5, "obj-59", "flonum", "float", 15.0, 5, "obj-75", "flonum", "float", -14.0, 5, "<invalid>", "flonum", "float", 500.0, 5, "<invalid>", "flonum", "float", 475.0, 5, "<invalid>", "flonum", "float", 15.0 ]
-						}
- ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 915.0, 624.0, 271.0, 20.0 ],
-					"text" : "<preset> object, to remember parameter settings"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-118",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -118,48 +98,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-114",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 327.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-112",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 369.0, 191.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-83",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.5, 421.0, 150.0, 20.0 ],
 					"text" : "<spectroscope~>"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 145.0, 135.0, 43.0, 22.0 ],
-					"text" : "cycle~"
 				}
 
 			}
@@ -612,13 +556,8 @@
 , 			{
 				"box" : 				{
 					"connections" : [ 						{
-							"in" : 3,
+							"in" : 2,
 							"out" : 0,
-							"gain" : 1.0
-						}
-, 						{
-							"in" : 3,
-							"out" : 1,
 							"gain" : 1.0
 						}
  ],
@@ -628,7 +567,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-21",
 					"incolormap" : "none",
-					"inlabels" : [ "RM~~", "dry_input", "AM", "FM" ],
+					"inlabels" : [ "RM~~", "dry_input", "AM", "not_used" ],
 					"maxclass" : "crosspatch",
 					"numinlets" : 1,
 					"numins" : 4,

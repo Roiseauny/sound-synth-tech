@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 526.0, 84.0, 653.0, 562.0 ],
+		"rect" : [ 41.0, 84.0, 826.0, 555.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -0.800000011920929, -17.600000262260437, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 44.400000274181366, -17.600000262260437, 194.799995422363281, 50.0 ],
+					"text" : "append None, append Mic, append Playlist, append Noise, append Clicks, append Sinewave"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -63,17 +88,17 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 0,
-					"clipheight" : 92.0,
+					"clipheight" : 41.599999248981476,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "C:\\Users\\royby\\Desktop\\sound-synth-tech\\media\\648437__timouse__piano-loop-21.wav",
 								"filename" : "648437__timouse__piano-loop-21.wav",
 								"filekind" : "audiofile",
-								"id" : "u556004630",
+								"id" : "u783000434",
 								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-									"loop" : 0
+									"loop" : 1
 								}
 
 							}
@@ -84,17 +109,17 @@
 					"formantcorrection" : 0,
 					"id" : "obj-31",
 					"maxclass" : "playlist~",
-					"mode" : 0,
+					"mode" : "monophonic",
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"originallength" : [ 0 ],
 					"originaltempo" : 0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 226.0, 297.0, 281.0, 93.0 ],
+					"patching_rect" : [ 226.0, 297.0, 362.600001215934753, 42.599999248981476 ],
 					"pitchcorrection" : 0,
-					"quality" : 0,
-					"timestretch" : [ 0 ]
+					"quality" : "good",
+					"timestretch" : [ 1 ]
 				}
 
 			}
@@ -208,7 +233,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : "<empty>",
+					"items" : [ "None", ",", "Mic", ",", "Playlist", ",", "Noise", ",", "Clicks", ",", "Sinewave" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -337,28 +362,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -404,6 +407,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -441,6 +451,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
