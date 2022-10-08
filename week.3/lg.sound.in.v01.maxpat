@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 826.0, 555.0 ],
+		"rect" : [ 71.0, 87.0, 826.0, 555.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 538.0, 258.0, 130.0, 34.0 ],
+					"text" : "<= put a new sound file into the playlist~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 487.0, 264.0, 49.0, 22.0 ],
+					"text" : "append"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
@@ -88,7 +112,7 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 0,
-					"clipheight" : 41.599999248981476,
+					"clipheight" : 29.86666641632716,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "C:\\Users\\royby\\Desktop\\sound-synth-tech\\media\\648437__timouse__piano-loop-21.wav",
@@ -99,6 +123,30 @@
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/royby/Desktop/sound-synth-tech/media/RB.vox.sung.fare.you.well.Bb.minor.wav",
+								"filename" : "RB.vox.sung.fare.you.well.Bb.minor.wav",
+								"filekind" : "audiofile",
+								"id" : "u421007605",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/royby/Desktop/sound-synth-tech/media/RB.vox.sung.vowels.Bb3.wav",
+								"filename" : "RB.vox.sung.vowels.Bb3.wav",
+								"filekind" : "audiofile",
+								"id" : "u959007608",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+
 								}
 
 							}
@@ -116,7 +164,7 @@
 					"originaltempo" : 0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 226.0, 297.0, 362.600001215934753, 42.599999248981476 ],
+					"patching_rect" : [ 234.699999392032623, 297.0, 439.600001215934753, 92.599999248981476 ],
 					"pitchcorrection" : 0,
 					"quality" : "good",
 					"timestretch" : [ 1 ]
@@ -414,6 +462,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -464,7 +519,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 2 ],
-					"midpoints" : [ 235.5, 394.0, 210.0, 394.0, 210.0, 233.0, 198.5, 233.0 ],
+					"midpoints" : [ 244.199999392032623, 394.0, 210.0, 394.0, 210.0, 233.0, 198.5, 233.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -509,6 +564,20 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "648437__timouse__piano-loop-21.wav",
+				"bootpath" : "~/Desktop/sound-synth-tech/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "RB.vox.sung.fare.you.well.Bb.minor.wav",
+				"bootpath" : "~/Desktop/sound-synth-tech/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "RB.vox.sung.vowels.Bb3.wav",
 				"bootpath" : "~/Desktop/sound-synth-tech/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",

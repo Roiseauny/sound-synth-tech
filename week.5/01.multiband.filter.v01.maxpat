@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 204.0, 128.0, 996.0, 501.0 ],
+		"rect" : [ 124.0, 145.0, 977.0, 501.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,45 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 429.0, 592.0, 93.0, 20.0 ],
+					"text" : "(for debugging)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 605.166668772697449, 643.0, 150.0, 34.0 ],
+					"text" : "<= put value at the index in the joseph buffer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 579.0, 537.638263665594877, 148.0, 20.0 ],
+					"text" : "<= get (index, value) pairs"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-61",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 589.0, 581.0, 91.0, 22.0 ],
+					"patching_rect" : [ 429.0, 572.0, 91.0, 22.0 ],
 					"text" : "print @popup 1"
 				}
 
@@ -269,8 +303,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 523.0, 336.0, 51.0, 22.0 ],
-					"text" : "zl group"
+					"patching_rect" : [ 523.0, 336.0, 81.0, 22.0 ],
+					"text" : "zl 4096 group"
 				}
 
 			}
@@ -297,7 +331,7 @@
 					"patching_rect" : [ 523.0, 384.0, 294.0, 102.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 256
+					"size" : 1024
 				}
 
 			}
@@ -320,7 +354,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 524.0, 614.638263665594877, 80.0, 22.0 ],
+					"patching_rect" : [ 524.0, 649.0, 80.0, 22.0 ],
 					"text" : "peek~ joseph"
 				}
 
@@ -703,13 +737,12 @@
 				"box" : 				{
 					"color" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"id" : "obj-1",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 7.666667282581329, 90.0, 144.0, 50.0 ],
-					"text" : "pfft~ does.nothing.pfftCore 2048 8"
+					"patching_rect" : [ 7.666667282581329, 90.0, 173.0, 22.0 ],
+					"text" : "pfft~ multiband.pfftCore 2048 8"
 				}
 
 			}
@@ -826,15 +859,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -1056,7 +1080,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "does.nothing.pfftCore.maxpat",
+				"name" : "multiband.pfftCore.maxpat",
 				"bootpath" : "~/Desktop/sound-synth-tech/week.5",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
